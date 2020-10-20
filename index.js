@@ -69,108 +69,114 @@ const createColumn = () => {
     return column
 }
 
-const generateFilledTable = (pair) => {
+const generateFilledTable = (pair, index) => {
     let row = createRow()
     let column1 = createColumn()
     let column2 = createColumn()
     let column3 = createColumn()
-    column1.innerText = pair[0]
-    column2.innerText = '/'
-    column3.innerText = pair[1]
+    let column4 = createColumn()
+    let column5 = createColumn()
+    column1.innerText = index
+    column2.innerText = pair[0]
+    column3.innerText = '/'
+    column4.innerText = pair[1]
+    column5.innerText = '='
     row.appendChild(column1)
     row.appendChild(column2)
     row.appendChild(column3)
+    row.appendChild(column4)
+    row.appendChild(column5)
     generatedNumbersTable.appendChild(row)
 }
 
 two1Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom2Digit, generateRandom1Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 three1Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, generateRandom1Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 four1Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom4Digit, generateRandom1Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 five1Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom5Digit, generateRandom1Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 six1Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom6Digit, generateRandom1Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 three2Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, generateRandom2Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 four2Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom4Digit, generateRandom2Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 five2Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom5Digit, generateRandom2Digit)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 threeNum2Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 2)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 threeNum3Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 3)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 threeNum4Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 4)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 threeNum5Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 5)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 threeNum6Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 6)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
@@ -178,7 +184,7 @@ threeNum6Button.addEventListener('click', function(){
 threeNum7Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 7)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
@@ -186,13 +192,13 @@ threeNum7Button.addEventListener('click', function(){
 threeNum8Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 8)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
 
 threeNum9Button.addEventListener('click', function(){
     for(let i = 0; i <= numberOfResults; i++){
         let pair = returnDivedablePair(generateRandom3Digit, () => 9)
-        generateFilledTable(pair)    
+        generateFilledTable(pair, i + 1)    
     }
 })
