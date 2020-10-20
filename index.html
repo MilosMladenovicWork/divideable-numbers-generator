@@ -28,19 +28,51 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+        }
+
+        .row{
+            display:block;
+            width:100%;
+            margin:10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button{
+            margin:0 5px;
+            background:rgb(195, 216, 255);
+            padding:5px;
+            border:none;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class='centered'>
-        <button id='two-1'>2 cifreni / 1 cifreni</button>
-        <button id='three-1'>3 cifreni / 1 cifreni</button>
-        <button id='four-1'>4 cifreni / 1 cifreni</button>
-        <button id='five-1'>5 cifreni / 1 cifreni</button>
-    
-        <button id='three-2'>3 cifreni / 2 cifreni</button>
-        <button id='four-2'>4 cifreni / 2 cifreni</button>
-        <button id='five-2'>5 cifreni / 2 cifreni</button>
+        <div class='row'>
+            <button id='two-1'>2 cifreni / 1 cifreni</button>
+            <button id='three-1'>3 cifreni / 1 cifreni</button>
+            <button id='four-1'>4 cifreni / 1 cifreni</button>
+            <button id='five-1'>5 cifreni / 1 cifreni</button>
+            <button id='six-1'>6 cifreni / 1 cifreni</button>
+        </div>
+        <div class='row'>
+            <button id='three-2'>3 cifreni / 2 cifreni</button>
+            <button id='four-2'>4 cifreni / 2 cifreni</button>
+            <button id='five-2'>5 cifreni / 2 cifreni</button>
+        </div>
+        <div class='row'>
+            <button id='three-num-2'>3 cifreni / broj 2</button>
+            <button id='three-num-3'>3 cifreni / broj 3</button>
+            <button id='three-num-4'>3 cifreni / broj 4</button>
+            <button id='three-num-5'>3 cifreni / broj 5</button>
+            <button id='three-num-6'>3 cifreni / broj 6</button>
+            <button id='three-num-7'>3 cifreni / broj 7</button>
+            <button id='three-num-8'>3 cifreni / broj 8</button>
+            <button id='three-num-9'>3 cifreni / broj 9</button>
+        </div>
     </div>
     <div class='centered'>
         <table id='generated-numbers'>
